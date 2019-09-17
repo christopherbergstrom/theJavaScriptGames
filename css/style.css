@@ -1,0 +1,35 @@
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+}
+header {
+    display: inline-block;
+    width: 100vw;
+    background-color: #ccc;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search {
+    justify-self: flex-end;
+    /* width: 50px; */
+    /* padding: 20px; */
+}
+nav div:first-child {
+    font-size: 2em;
+}
+.w3-row-padding {
+    
+}
+.w3-third {
+    text-align: center;
+    height: calc(((100vw / 3) - 32px) / 2);
+}
+.w3-third:nth-child(odd) {
+    background-color: #333;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}
