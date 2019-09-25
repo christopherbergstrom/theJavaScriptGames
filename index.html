@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/w3.css">
+    <!-- <link rel="stylesheet" href="css/icons/foundation-icons.css"> -->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
@@ -12,17 +14,53 @@
 </head>
 <body>
     <header>
-        <nav class="w3-bar">
-            <div class="w3-bar-item">The JavaScript Games</div>
-            <div class="search">
-                <input type="text" class="w3-input w3-bar-item" placeholder="search for a game">
-                <button class="w3-bar-item w3-button w3-green">Go</button>
+        <!-- top menu -->
+        <nav class="top-bar" role="navigation">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="menu-text"><h4>The JavaScript Games</h4></li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li><input id="searchBox" type="search" placeholder="Search for a game"></li>
+                    <!-- <li><button type="button" class="button" id="searchButton">Search</button></li> -->
+                </ul>
             </div>
         </nav>
     </header>
-    <footer class="w3-bar w3-black">
-        <div class="w3-bar-item">Created by <a href="http://bergstromwebdesigns.com" class="w3-text-amber">Bergstrom <span class="mainColor">Web Designs</span></a></div>
-        <div class="w3-bar-item"><a href="mailto:bergstromwebdesigns@gmail.com" class="w3-text-amber">bergstromwebdesigns@gmail.com</a></div>
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+            <div class="cell medium-6 large-4 gameItem">
+                <div class="card">
+                    <div class="card-divider">Tic Tac Toe</div>
+                </div>
+                <img src="images/game1.png" alt="Tic Tac Toe">
+            </div>
+            <div class="cell medium-6 large-4 gameItem">
+                <div class="card">
+                    <div class="card-divider">Warrior Project</div>
+                </div>
+                <img src="images/game2.png" alt="Warrior Project">
+            </div>
+            <div class="cell medium-6 large-4 gameItem">
+                <div class="card">
+                    <div class="card-divider">Click It</div>
+                </div>
+                <img src="images/game3.png" alt="Click It">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="menu align-center">
+            <!-- <li class="menu-text">Created by</li> -->
+            <li><a href="http://bergstromwebdesigns.com" class="" target="_blank">Created by Bergstrom <span class="mainColor">Web Designs</span></a></li>
+            <li><a href="mailto:bergstromwebdesigns@gmail.com" class="">bergstromwebdesigns@gmail.com</a></li>
+        </ul>
     </footer>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
