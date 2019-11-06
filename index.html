@@ -4,63 +4,58 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/icons/foundation-icons.css"> -->
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" href="public/css/normalize.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="public/js/script.js"></script> -->
     <title>The JavaScript Games</title>
 </head>
 <body>
     <header>
-        <!-- top menu -->
-        <nav class="top-bar" role="navigation">
-            <div class="top-bar-left">
-                <ul class="menu">
-                    <li class="menu-text"><h4>The JavaScript Games</h4></li>
-                </ul>
-            </div>
-            <div class="top-bar-right">
-                <ul class="menu">
-                    <li><input id="searchBox" type="search" placeholder="Search for a game"></li>
-                    <!-- <li><button type="button" class="button" id="searchButton">Search</button></li> -->
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="grid-container fluid">
-        <div class="grid-x grid-margin-x">
-            <div class="cell medium-6 large-4 gameItem">
-                <div class="card">
-                    <div class="card-divider">Tic Tac Toe</div>
-                </div>
-                <img src="images/game1.png" alt="Tic Tac Toe">
-            </div>
-            <div class="cell medium-6 large-4 gameItem">
-                <div class="card">
-                    <div class="card-divider">Warrior Project</div>
-                </div>
-                <img src="images/game2.png" alt="Warrior Project">
-            </div>
-            <div class="cell medium-6 large-4 gameItem">
-                <div class="card">
-                    <div class="card-divider">Click It</div>
-                </div>
-                <img src="images/game3.png" alt="Click It">
-            </div>
+      <!-- top menu -->
+      <nav class="mainNav" role="navigation">
+        <div class="brand">The JavaScript Games</div>
+        <div class="searchBar">
+          <input id="searchBox" type="text" placeholder="Search for a game">
         </div>
+      </nav>
+    </header>
+    <div class="gameList">
+      <div class="gameItem">
+        <a href="">
+          <div class="title">Tic Tac Toe</div>
+          <img src="images/tic-tac-toe.png" alt="Tic Tac Toe">
+        </a>
+      </div>
+      <div class="gameItem">
+        <a href="">
+          <div class="title">Warrior Project</div>
+          <img src="images/warrior.png" alt="Warrior Project">
+        </a>
+      </div>
+      <div class="gameItem">
+        <a href="">
+          <div class="title">Click It</div>
+          <img src="images/clickIt.png" alt="Click It">
+        </a>
+      </div>
+      <div class="gameItem">
+        <a href="">
+          <div class="title">Type Faster</div>
+          <img src="images/typeFaster.png" alt="Type Faster">
+        </a>
+      </div>
+      <div class="gameItem">
+        <a href="">
+          <div class="title">Maze Generator</div>
+          <img src="images/maze.png" alt="Click It">
+        </a>
+      </div>
     </div>
     <footer>
-        <ul class="menu align-center">
-            <!-- <li class="menu-text">Created by</li> -->
-            <li><a href="http://bergstromwebdesigns.com" class="" target="_blank">Created by Bergstrom <span class="mainColor">Web Designs</span></a></li>
-            <li><a href="mailto:bergstromwebdesigns@gmail.com" class="">bergstromwebdesigns@gmail.com</a></li>
-        </ul>
+      <!-- <li class="menu-text">Created by</li> -->
+      <li><a href="http://bergstromwebdesigns.com" class="" target="_blank">Created by Bergstrom <span class="mainColor">Web Designs</span></a></li>
+      <li><a href="mailto:bergstromwebdesigns@gmail.com" class="">bergstromwebdesigns@gmail.com</a></li>
     </footer>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
 </body>
 </html>
