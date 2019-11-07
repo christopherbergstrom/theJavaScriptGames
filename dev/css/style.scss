@@ -1,4 +1,4 @@
-
+$menuBgColor: #666;
 
 header, section, footer, aside, nav, main, article, figure {
   display: block;
@@ -9,7 +9,7 @@ header, section, footer, aside, nav, main, article, figure {
   grid-template-rows: minmax(100px, auto);
   align-items: center;
   padding: 1rem;
-  background-color: #666;
+  background-color: $menuBgColor;
   .brand {
     font-size: 2rem;
     font-weight: bold;
@@ -46,4 +46,16 @@ header, section, footer, aside, nav, main, article, figure {
       width: 100%;
       height: auto;
   }
+}
+
+.footer {
+  background-color: $menuBgColor;
+  // display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 300px));
+  // grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+  a {
+    padding: 14px 16px;
+  }
+  // align-items: center;
 }

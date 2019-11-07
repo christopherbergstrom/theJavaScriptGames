@@ -45,4 +45,13 @@ header, section, footer, aside, nav, main, article, figure {
   height: auto;
 }
 
+.footer {
+  background-color: #666;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 300px));
+}
+.footer a {
+  padding: 14px 16px;
+}
+
 /*# sourceMappingURL=app.css.map */

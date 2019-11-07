@@ -1,10 +1,27 @@
 [
   {
-      "name" : "Tic Tac Toe",
-      "image" : "../images/tictactoe.png"
+    "name" : "Tic Tac Toe",
+    "image" : "../images/tic-tac-toe.png",
+    "link" : "#"
   },
   {
-      "name" : "Warrior Project",
-      "image" : "../images/warrior.png"
+    "name" : "Warrior Project",
+    "image" : "../images/warrior.png",
+    "link" : "#"
+  },
+  {
+    "name" : "Click It",
+    "image" : "../images/clickIt.png",
+    "link" : "#"
+  },
+  {
+    "name" : "Type Faster",
+    "image" : "../images/typeFaster.png",
+    "link" : "#"
+  },
+  {
+    "name" : "Maze Generator",
+    "image" : "../images/maze.png",
+    "link" : "#"
   }
 ]
