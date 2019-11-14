@@ -4,14 +4,16 @@ $(document).ready(() => {
   $.get("gameList.json", (data) => {
     games = data;
     // console.log(data[0].name);
+    loadGames("");
   });
   $("#searchBox").keyup((e) => {
     // console.log($("input").val());
-    console.log(e.which);
+    // console.log(e.which);
     // if (e.which == 13) {
-      console.log("here");
+      // console.log("here");
       
     // }
+    // console.log($("input").val())
     loadGames($("input").val());
   });
 });
@@ -36,8 +38,8 @@ function loadGames(searchValue) {
     else if (!found && i === games.length-1){
       $(".gameList").append(`
         <div class="gameItem">
-          <div class="title">No Results</div>
-          <img src="../images/tic-tac-toe.png" title="No Results" alt="No Results">
+          <h3 class="title">No Results</h3>
+          <img src="../images/noResults.jpg" title="No Results" alt="No Results">
         </div>
       `);
       break;

@@ -3,6 +3,12 @@ $menuBgColor: #666;
 header, section, footer, aside, nav, main, article, figure {
   display: block;
 }
+body {
+  font-family: 'Quicksand','Helvetica Neue',Arial, sans-serif;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  max-width: 1440px;
+}
 .mainNav {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -10,6 +16,8 @@ header, section, footer, aside, nav, main, article, figure {
   align-items: center;
   padding: 1rem;
   background-color: $menuBgColor;
+  // background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, yellow, #66ffff, #9933ff); /* Standard syntax (must be last) */
   .brand {
     font-size: 2rem;
     font-weight: bold;
@@ -31,6 +39,7 @@ header, section, footer, aside, nav, main, article, figure {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
   padding: 2rem;
+  text-align: center;
   // gap: 20px;
   // grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 }
@@ -44,12 +53,15 @@ header, section, footer, aside, nav, main, article, figure {
   }
   img {
       width: 100%;
+      // height: calc(100vw / 6);
       height: auto;
   }
 }
 
 .footer {
   background-color: $menuBgColor;
+  // background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, yellow, #66ffff, #9933ff); /* Standard syntax (must be last) */
   // display: inline-block;
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 300px));
